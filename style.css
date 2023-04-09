@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile styles */
+header {
+  /* border: 1px solid black; */
+  height: 90vh;
+  background-image: url("images/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+.logo-nav {
+  /* border: 1px solid blue; */
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  /* border: 1px solid red; */
+  height: 100%;
+}
+
+.nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  display: none;
+}
+
+.logo {
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 130px;
+  background: url("images/logo.svg") no-repeat;
+  background-position: center;
+}
+
+header h1 {
+  margin-top: 2em;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.arrow {
+  height: 120px;
+  width: 40px;
+  background: url("images/icon-arrow-down.svg") no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.main1 {
+  /* border: 1px solid black; */
+  height: 180vh;
+}
+
+.column {
+  /* border: 1px solid blue; */
+  height: 50%;
+}
+
+.image {
+  /* border: 1px solid red; */
+  height: 35%;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.transform {
+  background-image: url("images/mobile/image-transform.jpg");
+}
+
+.standout {
+  background-image: url("images/mobile/image-stand-out.jpg");
+}
+
+.text {
+  /* border: 1px solid green; */
+  height: 65%;
+  padding: 1em;
+  text-align: center;
+}
+
+.contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.text h2 {
+  font-size: 2.5rem;
+}
+
+.text p {
+  font-size: 1rem;
+  color: #484343d1;
+}
+
+.text a {
+  text-decoration: none;
+  color: black;
+}
+
+.image-text {
+  height: 200vh;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+
+.cherry {
+  height: 100vh;
+  /* border: 1px solid green; */
+}
+
+.image-cherry {
+  height: 60vh;
+  /* border: 1px solid blue; */
+  background-image: url(images/desktop/image-graphic-design.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cherry-text {
+  height: 40vh;
+  /* border: 1px solid violet; */
+  background-color: rgb(162, 233, 222);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.cherry-text h3 {
+  text-align: center;
+}
+
+.cherry-text p {
+  text-align: center;
+}
+
+.apple {
+  height: 100vh;
+  /* border: 1px solid goldenrod; */
+}
+
+.image-apple {
+  height: 60vh;
+  /* border: 1px solid blue; */
+  background-image: url(images/desktop/image-photography.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.apple-text {
+  height: 40vh;
+  /* border: 1px solid violet; */
+  background-color: rgb(97, 207, 251);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.apple-text p {
+  text-align: center;
+}
+
+.apple-text h3 {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+  /* Desktop styles */
+
+  header {
+    background-image: url("images/desktop/image-header.jpg");
+  }
+
+  .nav li {
+    display: flex;
+  }
+
+  .nav ul a hover {
+    color: black;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+  .nav img {
+    display: none;
+  }
+
+  .nav {
+    width: 500px;
+  }
+
+  .nav ul {
+    justify-content: space-between;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  header h1 {
+    margin-top: 1.2em;
+    font-size: 4em;
+  }
+
+  .arrow {
+    margin-top: 4em;
+  }
+
+  .main1 {
+    height: 120vh;
+  }
+
+  .column {
+    display: flex;
+  }
+
+  .first-row {
+    flex-direction: row-reverse;
+  }
+
+  .image,
+  .text {
+    height: 100%;
+    width: 50%;
+  }
+
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 0;
+  }
+
+  .transform {
+    background-image: url("images/desktop/image-transform.jpg");
+  }
+
+  .standout {
+    background-image: url("images/desktop/image-stand-out.jpg");
+  }
+
+  .contents {
+    width: 60%;
+    height: 60%;
+  }
+
+  .image-text {
+    flex-direction: row;
+    height: 250vh;
+  }
+
+  .apple {
+    width: 50vw;
+  }
+
+  .cherry {
+    width: 50vw;
+  }
+
+  .image-apple,
+  .image-cherry {
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+  }
+
+}
